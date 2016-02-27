@@ -23,21 +23,19 @@ module.exports = {
     preLoaders: [
       {
         test: /\.js$/,
-        loaders: ['eslint'],
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        loaders: ['eslint']
       }
     ],
     loaders: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
-        query: {
-          presets: ['es2015', 'react']
-        }
+        loader: "babel-loader"
       },
       {
         test: /\.scss$/,
+        exclude: /node_modules/,
         loaders: ['style', 'css', 'sass']
       }
     ]
