@@ -43,9 +43,6 @@ export default class VideosContainer extends Component {
           {VideosData.map((item) => <VideoComponent key={item.id} {...item} /> )}
         </div>
         <div className="ec-videos__navigation">
-          <div className="ec-videos__navigation-left">
-            Hide Videos
-          </div>
           <div className="ec-videos__navigation-right">
             <div className={prevBtnCls} onClick={canGoPrev ? this.onPrevVideo : null}>
               &lt;
