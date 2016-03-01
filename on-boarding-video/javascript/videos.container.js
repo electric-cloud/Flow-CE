@@ -5,6 +5,8 @@ import VideoComponent from './video.component';
 import VideosData from './videos-data';
 import cn from 'classnames';
 import Cookie from 'js-cookie';
+import ButtonNext from '../images/button-view-next.svg';
+import ButtonPrev from '../images/button-view-previous.svg';
 
 
 export default class VideosContainer extends Component {
@@ -34,8 +36,8 @@ export default class VideosContainer extends Component {
         canGoPrev = this.state.activeVideo !== 0,
         canGoNext = this.state.activeVideo !== VideosData.length - 1;
 
-    let prevBtnCls = cn('ec-videos__navigation-icon', {disabled: canGoPrev});
-    let nextBtnCls = cn('ec-videos__navigation-icon', {disabled: canGoNext});
+    let prevBtnCls = cn('ec-videos__navigation-icon', {disabled: !canGoPrev});
+    let nextBtnCls = cn('ec-videos__navigation-icon', {disabled: !canGoNext});
 
     return (
       <div className="ec-videos">
@@ -45,10 +47,10 @@ export default class VideosContainer extends Component {
         <div className="ec-videos__navigation">
           <div className="ec-videos__navigation-right">
             <div className={prevBtnCls} onClick={canGoPrev ? this.onPrevVideo : null}>
-              &lt;
+              <svg className="sds-svg-icon"><use xlinkHref={ButtonPrev} /></svg>
             </div>
             <div className={nextBtnCls} onClick={canGoNext ? this.onNextVideo : null}>
-              &gt;
+              <svg className="sds-svg-icon"><use xlinkHref={ButtonNext} /></svg>
             </div>
           </div>
         </div>

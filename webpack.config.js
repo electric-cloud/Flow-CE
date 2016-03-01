@@ -37,6 +37,10 @@ module.exports = {
         test: /\.scss$/,
         exclude: /node_modules/,
         loaders: ['style', 'css', 'sass']
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-sprite?' + JSON.stringify({name: '[name]_[hash]'})
       }
     ]
   },

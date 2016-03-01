@@ -4,7 +4,6 @@ import React from 'react';
 
 
 let VideoComponent = ({title, description, videoUrl, helpcenterUrl}) => {
-  console.log(description);
   return (
     <div className="ec-videos__video">
       <div className="ec-videos__video-header" title={title}>{title}</div>
