@@ -5,6 +5,7 @@ import VideoComponent from './video.component';
 import VideosData from './videos-data';
 import cn from 'classnames';
 import Cookie from 'js-cookie';
+
 import ButtonNext from '../images/button-view-next.svg';
 import ButtonPrev from '../images/button-view-previous.svg';
 

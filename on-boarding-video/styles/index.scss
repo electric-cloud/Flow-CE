@@ -28,20 +28,16 @@
   }
 
   &__video-player {
-    margin: 20px 0;
+    margin: 20px 0 15px;
     height: 315px;
   }
 
   &__video-description {
-    font-size: 14px;
+    font-size: 0.875em;
     height: 60px;
     text-align: left;
     overflow: hidden;
-  }
-
-  &__video-link {
-    font-size: 12px;
-    text-align: right;
+    line-height: 1.4em;
   }
 
   &__navigation {

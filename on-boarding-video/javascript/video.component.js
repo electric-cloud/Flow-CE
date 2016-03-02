@@ -10,9 +10,8 @@ let VideoComponent = ({title, description, videoUrl, helpcenterUrl}) => {
       <div className="ec-videos__video-player">
         <iframe width="100%" height="100%" src={videoUrl} allowFullScreen={true}></iframe>
       </div>
-      <div className="ec-videos__video-description">{description}</div>
-      <div className="ec-videos__video-link">
-        <a href={helpcenterUrl} target="_blank">Full tutorial &gt;</a>
+      <div className="ec-videos__video-description">
+        {description} - <a href={helpcenterUrl} target="_blank">Full tutorial &gt;</a>
       </div>
     </div>
   );

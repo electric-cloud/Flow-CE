@@ -8,7 +8,7 @@ export default [
     helpcenterUrl: 'https://helpcenter.electric-cloud.com/hc/en-us/articles/204966906?page=1',
     description: `1In this module, you will learn how to download, import, start, and register the appliance.
           If you need to install the appliance and either VirtualBox, follow the following steps.
-          You can run the appliance in VirtualBox.
+          You can run the appliance in VirtualBox...
           `
 
   },
